@@ -66,17 +66,17 @@ CREATE TABLE cats (
 Let's add some cats to our `cats` table to make this more interesting:
 
 ```sql
-sqlite> INSERT INTO cats (name, age, breed, owner_id) VALUES ("Maru", 3 , "Scottish Fold", 1);
-sqlite> INSERT INTO cats (name, age, breed, owner_id) VALUES ("Hana", 1 , "Tabby", 1);
-sqlite> INSERT INTO cats (name, age, breed) VALUES ("Lil\' Bub", 5, "American Shorthair");
-sqlite> INSERT INTO cats (name, age, breed) VALUES ("Moe", 10, "Tabby");
-sqlite> INSERT INTO cats (name, age, breed) VALUES ("Patches", 2, "Calico");
+INSERT INTO cats (name, age, breed, owner_id) VALUES ("Maru", 3 , "Scottish Fold", 1);
+INSERT INTO cats (name, age, breed, owner_id) VALUES ("Hana", 1 , "Tabby", 1);
+INSERT INTO cats (name, age, breed) VALUES ("Lil\' Bub", 5, "American Shorthair");
+INSERT INTO cats (name, age, breed) VALUES ("Moe", 10, "Tabby");
+INSERT INTO cats (name, age, breed) VALUES ("Patches", 2, "Calico");
 ```
 
 Let's check out our `cats` table now:
 
 ```sql
-sqlite> SELECT * FROM cats;
+SELECT * FROM cats;
 ```
 
 This should return:
@@ -125,7 +125,7 @@ SELECT column_name FROM table_name ORDER BY column_name ASC|DESC;
 Let's select our cats and order them by age:
 
 ```sql
-sqlite> SELECT * FROM cats ORDER BY age;
+SELECT * FROM cats ORDER BY age;
 ```
 
 This should return the following:
@@ -368,7 +368,7 @@ CREATE TABLE dogs (
 ```
 
 ```sql
-sqlite> INSERT INTO dogs (name) VALUES ("Clifford");
+INSERT INTO dogs (name) VALUES ("Clifford");
 ```
 
 
